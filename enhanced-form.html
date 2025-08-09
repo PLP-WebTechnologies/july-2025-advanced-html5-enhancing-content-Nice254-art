@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Lists, Tables, Media, and Form Example">
+    <meta name="author" content="Shanice Akinyi Oduor">
+    <title>Enhanced HTML5 Form Example</title>
+  
+</head>
+<body>
+
+<header>
+    <h1>My Multi-Section Web Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and an HTML5 form with validation.</p>
+</header>
+
+<section>
+    <h2>Favourite Hobbies</h2>
+    <ul>
+        <li>Reading novels</li>
+        <li>Playing football</li>
+        <li>Traveling</li>
+    </ul>
+
+    <h2>Weekly Schedule</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Activity</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Gym Workout</td>
+                <td>1 hour</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Football Training</td>
+                <td>2 hours</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Reading</td>
+                <td>1.5 hours</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Media Section</h2>
+    <figure>
+        <img src="https://images.pexels.com/photos/12521170/pexels-photo-12521170.png" alt="Sample Image" width="300">
+        <figcaption>A sample placeholder image</figcaption>
+    </figure>
+
+    <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="320">
+        <source src="https://videos.pexels.com/video-files/12634389/12634389-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</section>
+<section>
+    <h2>Steps to Register</h2>
+    <ol>
+        <li>Fill in your personal information.</li>
+        <li>Create a username and password.</li>
+        <li>Select your country and preferences.</li>
+        <li>Review the information for accuracy.</li>
+        <li>Click the "Submit Form" button.</li>
+    </ol>
+</section>
+
+
+<section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" pattern="[0-9]{10}" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="4">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="ke">Kenya</option>
+                <option value="ug">Uganda</option>
+                <option value="tz">Tanzania</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="subscribe" value="yes">
+                Subscribe to newsletter
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required> Female
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit Form">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 My Web Page. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
